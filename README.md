@@ -131,6 +131,13 @@ Attachments and starter files for this problem are located at `/workspace/data/0
 
 Submit a single C++ source file to the Online Judge. The OJ provides its own `main.cpp` which `#include "src.hpp"`. Your submission will be written to `src.hpp` and compiled together with the OJ's driver code.
 
+Notes for this repo:
+- Implemented `src.hpp` and `fraction.hpp` at repo root. Local `test.cpp` in attachments passes and matches OJ.
+- When submitting via Git URL, OJ embedded our URL string accidentally; use the included client’s `submit-file` to upload `src.hpp` directly as `cpp`.
+- Commands used:
+  - `python3 submit_acmoj/acmoj_client.py --token $ACMOJ_TOKEN submit-file --problem-id 2238 --file src.hpp --language cpp`
+  - `python3 submit_acmoj/acmoj_client.py --token $ACMOJ_TOKEN status --submission-id <id>`
+
 ### Submission Guidelines
 
 - The submitted code must be able to compile successfully through the above compilation process
